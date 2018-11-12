@@ -8,7 +8,37 @@
   <title>Document</title>
 <link href="style.css" rel="stylesheet"></head>
 <body>
-  <header style="width: 100%; height: 42px; background-color: #434343; color: #fff;">Web Alternativa</header>
+  <header class="page-header">
+  <div class="page-header_wrap">
+    <div class="page-header_logo">
+      <a href="#">
+        <img src="7d350bb9d249703934f91ac779916460.png" alt="web alternative">
+      </a>
+    </div>
+
+    <div class="header-phone">
+      <button class="header-phone_modal" id="headerPhoneModal">Заказать звонок</button>
+      <span class="header-phone_number">+7 (4212) 25-30-85</span>
+    </div>
+
+    <nav id="pageMenu" class="page-nav">
+      <ul class="page-nav_list">
+        <li class="page-nav_item"><a href="#">О студии</a></li>
+        <li class="page-nav_item"><a href="#">Портфолио</a></li>
+        <li class="page-nav_item"><a href="#">Наши услуги</a></li>
+        <li class="page-nav_item"><a href="#">Новости</a></li>
+        <li class="page-nav_item"><a href="#">Отзывы</a></li>
+        <li class="page-nav_item"><a href="#">Контакты</a></li>
+      </ul>
+
+      <button class="page-nav_phone-modal" id="navPhoneModal">+7 (4212) 25-30-85</button>
+    </nav>
+
+    <button id="showPageMenu" class="page-header_menu-open">
+      <i class="icon-hamburger"></i>
+    </button>
+  </div>
+</header>
 
   <section class="hero">
   <div class="hero-slider  owl-carousel">
@@ -27,7 +57,7 @@
             <span class="item-content_more">Подробнее<i class="icon-arrow"></i></span>
           </a>
 
-          <div class="item-content_index">
+        <div class="item-content_index">
             <span class="item-index">01</span>
           </div>
 
@@ -56,9 +86,6 @@
               <img src="45f28525158961e0c6f5d1659b61a3af.svg" alt="">
             </div>
             <div class="img-feature_wrap">
-              <!-- <div class="img-feature_img">
-                <img src="7d0ab3054aaaadd652f586081e88cadb.jpg" alt="">
-              </div> -->
               <div class="img-feature_text">
                 <h5>Заголовок</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum doloremque assumenda?</p>
@@ -80,7 +107,7 @@
               </div>
             </div>
           </div>
-        </div>
+      </div>
       </div>
 
       <div class="hero-slider_bg-fill"></div>
@@ -180,7 +207,7 @@
   <div class="hero_control">
     <button class="owl-prev"><svg width="29" height="29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.142 0L1.414 12.728 0 14.142l1.414 1.414 12.728 12.728 1.414-1.414L2.828 14.142 15.556 1.414 14.142 0z" fill="#fff"/></svg></button>
     <button class="owl-next"><svg width="29" height="29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.858 0l12.728 12.728L29 14.142l-1.414 1.414-12.728 12.728-1.414-1.414 12.728-12.728L13.444 1.414 14.858 0z" fill="#fff"/></svg></button>
-    <a href="#" class="link-btn">Наши кейсы</a>
+    <a id="linkPortfolio" href="#" class="link-btn">Наши кейсы</a>
   </div>
 
   <div class="hero-animation">
