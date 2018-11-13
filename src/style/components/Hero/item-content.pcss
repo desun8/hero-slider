@@ -118,7 +118,7 @@
     @apply --list-unstyled;
 
     font-size: 14px;
-    line-height: 18px;
+    line-height: 16px;
 
     @media (--tablet) {
       color: #a1a1a1;
@@ -134,7 +134,7 @@
 
     @media (--desktop1200) {
       font-size: 36px;
-      line-height: 44px;
+      line-height: 42px;
       font-weight: 300;
     }
 
@@ -166,7 +166,13 @@
     color: #d6d6d6;
     font-size: 12px;
     line-height: 16px;
+    font-weight: 400;
     z-index: 10;
+
+    @media (--tablet) {
+      font-family: var(--headerFont);
+      font-weight: 400;
+    }
 
     &:hover {
       @media (--desktop) {
@@ -214,12 +220,14 @@
     }
 
     @media (--tablet960) {
-      bottom: 30px;      
+      font-family: var(--mainFont);
+      bottom: 26px;     
+      font-weight: 700; 
     }
 
     @media (--desktop1200) {
-      bottom: 110px;
-      font-size: 100px;
+      bottom: 105px;
+      font-size: 90px;
     }
 
     & .item-index {
@@ -302,7 +310,7 @@
     @media (--desktop1200) {
       margin-bottom: 40px;
       font-size: 52px;
-      line-height: 64px;
+      line-height: 60px;
     }
   }
 

@@ -176,28 +176,52 @@
     @media (--tablet) {
       @apply --trans;
 
-      padding: 9px 14px;
-      font-size: 16px;
-      line-height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 14px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
       border-width: 2px;
+      background-color: var(--orange);
     }
 
     @media (--tabletOnly) {
-      padding: 7px 10px;
+      padding: 0 10px;
       font-size: 14px;
       line-height: 16px;
       border-width: 1px;
     }
 
+    /* @media (--tablet) {
+      
+    } */
+
     @media (--desktop1200) {
-      padding: 19px 14px;
+      padding: 14px 18px;
+      padding-right: 4px;
     }
 
     &:hover {
-      @media (--tablet) {
-        color: #fff;
-        background-color: var(--orange);
+      @media (--tablet960) {
+        background-color: var(--orangeDarken);
+        border-color: var(--orangeDarken);
       }
     }
+
+    & svg {
+      display: none;
+
+      @media (--tablet) {
+        display: block;
+        transform: scale(0.4) translateX(-10px);
+      }
+    }
+  }
+
+  & p {
+    margin: 0;
   }
 }
