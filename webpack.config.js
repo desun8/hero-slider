@@ -12,7 +12,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: '/hero-slider/',
+    // publicPath: '/hero-slider/',
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
   },
@@ -67,9 +67,6 @@ module.exports = {
               },
               gifsicle: {
                 interlaced: false,
-              },
-              webp: {
-                quality: 75,
               },
             },
           },

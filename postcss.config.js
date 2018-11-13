@@ -4,5 +4,6 @@ module.exports = {
     require('postcss-apply'),
     require('postcss-preset-env')({ stage: 0 }),
     require('postcss-nested'),
+    require('cssnano')({ preset: 'default' }),
   ],
 };
